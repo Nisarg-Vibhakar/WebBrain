@@ -22,7 +22,7 @@ const UpdateEmployeePage = () => {
   useEffect(() => {
     async function fetchEmployeeData() {
       try {
-        const response = await axios.get(`http://localhost:5000/api/oneEmployee/${id}`);
+        const response = await axios.get(`https://webbrain.onrender.com/api/oneEmployee/${id}`);
         const employee = response.data;
         setEmployeeData(employee);
       } catch (error) {
@@ -68,7 +68,7 @@ const UpdateEmployeePage = () => {
         password: employeeData.password,
       };
       const loginUserId = employeeData.loginUserId
-      const response = await axios.put(`http://localhost:5000/api/employee/${loginUserId}`, updatedEmployee);
+      const response = await axios.put(`https://webbrain.onrender.com/api/employee/${loginUserId}`, updatedEmployee);
 
       if (response.status === 200) {
         setSuccessMessage('Employee updated successfully');

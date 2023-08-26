@@ -9,7 +9,7 @@ const EmployeeDetailsPage = () => {
   useEffect(() => {
     async function fetchEmployeeDetails() {
       try {
-        const response = await axios.get(`http://localhost:5000/api/oneEmployee/${loginUserId}`);
+        const response = await axios.get(`https://webbrain.onrender.com/api/oneEmployee/${loginUserId}`);
         const employee = response.data;
         setEmployeeDetails(employee);
       } catch (error) {

@@ -49,7 +49,7 @@ const AddEmployeePage = () => {
       const calculatedSalary = calculateSalary(salaryType, workHours);
 
      
-      const response = await axios.post('http://localhost:5000/api/employee', {
+      const response = await axios.post('https://webbrain.onrender.com/api/employee', {
         firstName,
         lastName,
         phone,

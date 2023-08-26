@@ -10,7 +10,7 @@ const ManagerDashboard = () => {
   useEffect(() => {
     async function fetchEmployees() {
       try {
-        const response = await axios.get(`http://localhost:5000/api/employee/${department}`, {
+        const response = await axios.get(`https://webbrain.onrender.com/api/employee/${department}`, {
         });
 
         if (response.status === 200) {

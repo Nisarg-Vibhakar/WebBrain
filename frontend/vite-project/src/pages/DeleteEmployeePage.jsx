@@ -9,7 +9,7 @@ const DeleteEmployeePage = () => {
 
   const handleDeleteEmployee = async () => {
     try {
-      const response = await axios.delete(`http://localhost:5000/api/employee/delete/${id}`);
+      const response = await axios.delete(`https://webbrain.onrender.com/api/employee/delete/${id}`);
       if (response.status === 200) {
         setSuccessMessage('Employee deleted successfully');
       } else {
