@@ -19,3 +19,16 @@ List of Features Implemented in the Project:
 - Deleting employees with confirmation prompts
 
 - Error handling and validation for user inputs
+
+
+# Test Data
+
+- Employee Login => 
+
+Login ID = johndoe
+password = password123
+
+- Manager Login =>
+
+Login ID = yewest@kanye.com
+password = password123
